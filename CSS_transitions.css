@@ -1,0 +1,78 @@
+.circle {
+	border-radius: 200px;   /*if border radius is smaller than the width and height then it will be a rounded square at least 1:2 ratio for a circle*/
+	background-color: #99e6ff;
+	width: 200px;
+	height: 200px;
+	border: solid black 5px;
+}
+
+.box {
+	width:100px;
+	height: 200px;
+	background-color:#cc99ff;
+	border: solid
+}
+
+.triangle {
+	width:0;
+	height:0;
+	background-color: orange;
+	border-right: solid 50px transparent;
+	border-left:solid 50px transparent;
+	border-top: solid 50px transparent;
+	border-bottom: solid 100px red;
+}
+
+#firstcircle {
+	animation: slide-right 10s infinite alternate;
+	
+}
+@keyframes slide-right {
+	from {
+		margin-left:0%;
+		margin-top:0%;
+		background-color:pink;
+		
+	}
+	
+	to {
+		margin-left:50%;
+		margin-top:50%;
+		background-color:blue;
+	}
+}
+#firstbox {
+	animation: grow 4s infinite alternate;
+	
+}
+@keyframes grow {
+	0% {
+		width: 0px;
+		height: 0px;
+	}
+	15% {
+		width: 500px;
+		height: 500px;
+		
+	}
+}
+
+#secondbox {
+	animation: rotate 4s infinite alternate;
+}
+@keyframes rotate { 
+ 0% {
+	 transform:rotate(0deg);
+	 background-color:red;
+ }
+ 15% {
+	 transform:rotate(180deg);
+ }
+ 75% {
+	 transform:rotate(270deg);
+ }
+ 100% {
+	 transform:rotate(360deg);
+	 background-color:blue;
+ }
+ }
